@@ -1,0 +1,47 @@
+# File: common/technology/tech_requirements.txt
+
+# This file modifies existing technologies to include our new buildings
+# We're adding the super factory and greenhouse to late-game technologies
+
+# Add Super Factory to Electrical Power Generation technology
+electrical_power_generation = {
+    # Existing entries remain unchanged
+    
+    # Add our new building
+    unlocks_building = building_super_factory
+}
+
+# Add Super Greenhouse to Modern Agriculture technology
+modern_agriculture = {
+    # Existing entries remain unchanged
+    
+    # Add our new building
+    unlocks_building = building_super_greenhouse
+}
+
+# Alternative approach: create custom technologies
+technology_super_industrial_complex = {
+    era = era_4
+    texture = "gfx/interface/icons/technology/electrical_power_generation.dds"
+    category = production
+    
+    # Prerequisites
+    unlocking_technologies = {
+        electrical_power_generation
+        synthetic_polymers
+    }
+    
+    # Unlock buildings
+    unlocks_building = building_super_factory
+    
+    # Research parameters
+    research_points_to_unlock = 30000
+    
+    # AI weight for research prioritization
+    ai_weight = {
+        modifier = {
+            factor = 1.5
+            has_strategy = ai_strategy_industrial_expansion
+        }
+    }
+}

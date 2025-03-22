@@ -1,0 +1,25 @@
+building_super_factory = {
+    building_group = bg_heavy_industry
+    texture = "gfx/interface/icons/building_icons/building_chemical_plants.dds"
+    
+    # High construction costs to balance power
+    unlocking_technologies = { 
+        electrical_generation
+        synthetic_polymers
+    }
+    
+    production_method_groups = {
+        pmg_base_building_super_factory
+        pmg_mineral_production
+        pmg_industrial_materials
+        pmg_automation_options
+    }
+    
+    required_construction = construction_cost_very_high
+    terrain_manipulator = yes
+    
+    # Buildable only in states, not provinces
+    buildable = {
+        trigger = { is_building_type_expanded = building_super_factory }
+    }
+}

@@ -1,0 +1,23 @@
+building_super_greenhouse = {
+    building_group = bg_agriculture
+    texture = "gfx/interface/icons/building_icons/building_plantations.dds"
+    
+    unlocking_technologies = {
+        modern_agriculture
+        electrical_generation
+    }
+    
+    production_method_groups = {
+        pmg_base_building_super_greenhouse
+        pmg_agricultural_production
+        pmg_organic_materials
+        pmg_fertilization_options
+    }
+    
+    required_construction = construction_cost_high
+    terrain_manipulator = yes
+    
+    buildable = {
+        trigger = { is_building_type_expanded = building_super_greenhouse }
+    }
+}

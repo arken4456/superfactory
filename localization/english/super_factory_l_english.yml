@@ -1,0 +1,13 @@
+l_english:
+ building_super_factory:0 "Super Factory"
+ building_super_factory_desc:0 "A highly advanced industrial complex capable of producing numerous mineral and industrial resources simultaneously through specialized processing methods."
+ building_super_greenhouse:0 "Super Greenhouse"
+ building_super_greenhouse_desc:0 "An expansive climate-controlled agricultural facility that can cultivate a wide variety of crops and organic materials regardless of the local climate."
+ 
+ pm_basic_super_factory:0 "Basic Super Factory Operations"
+ pm_advanced_super_factory:0 "Advanced Super Factory Operations"
+ pm_mineral_production_tier1:0 "Basic Mineral Extraction"
+ pm_mineral_production_tier2:0 "Advanced Mineral Processing"
+ pm_mineral_production_tier3:0 "Complete Resource Synthesis"
+ 
+ # Additional localization for all production methods...

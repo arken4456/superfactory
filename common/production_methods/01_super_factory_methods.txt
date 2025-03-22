@@ -1,0 +1,97 @@
+# Base methods
+pm_basic_super_factory = {
+    texture = "gfx/interface/icons/production_method_icons/factory_floor.dds"
+    
+    building_modifiers = {
+        workforce_scaled = {
+            # High workforce requirements
+            popneeds_fabric = 15
+            popneeds_services = 10
+        }
+        level_scaled = {
+            building_employment_laborers_add = 5000
+            building_employment_machinists_add = 2500
+            building_employment_engineers_add = 500
+        }
+    }
+}
+
+pm_advanced_super_factory = {
+    texture = "gfx/interface/icons/production_method_icons/automated_production.dds"
+    
+    unlocking_technologies = {
+        electrical_power_generation
+        petroleum_industry
+    }
+    
+    building_modifiers = {
+        workforce_scaled = {
+            popneeds_automobiles = 10
+            popneeds_electricity = 20
+            popneeds_services = 15
+        }
+        level_scaled = {
+            building_employment_laborers_add = 3000
+            building_employment_machinists_add = 3500
+            building_employment_engineers_add = 1000
+        }
+    }
+}
+
+# Mineral production methods
+pm_mineral_production_tier1 = {
+    texture = "gfx/interface/icons/production_method_icons/ore_mining.dds"
+    
+    building_modifiers = {
+        level_scaled = {
+            # Basic mineral outputs
+            goods_output_iron_add = 6000
+            goods_output_coal_add = 8000
+            goods_output_lead_add = 4000
+            goods_output_sulfur_add = 3000
+        }
+    }
+}
+
+pm_mineral_production_tier2 = {
+    texture = "gfx/interface/icons/production_method_icons/hydraulic_pumps.dds"
+    
+    unlocking_technologies = {
+        nitrogen_fixation
+    }
+    
+    building_modifiers = {
+        level_scaled = {
+            # Advanced mineral outputs
+            goods_output_iron_add = 60000
+            goods_output_coal_add = 80000
+            goods_output_lead_add = 40000
+            goods_output_sulfur_add = 30000
+            goods_output_oil_add = 50000
+            goods_output_gold_add = 20000           
+        }
+    }
+}
+
+pm_mineral_production_tier3 = {
+    texture = "gfx/interface/icons/production_method_icons/condensation_process.dds"
+    
+    unlocking_technologies = {
+        synthetic_polymers
+    }
+    
+    building_modifiers = {
+        level_scaled = {
+            # All mineral outputs
+            goods_output_iron_add = 100000
+            goods_output_coal_add = 120000
+            goods_output_lead_add = 80000
+            goods_output_sulfur_add = 60000
+            goods_output_oil_add = 100000
+            goods_output_gold_add = 40000
+
+        }
+    }
+}
+
+# Similar definitions for industrial materials production methods...
